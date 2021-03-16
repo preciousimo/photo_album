@@ -11,7 +11,7 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <style>
-        .image-thumbail{
+        .image-thumbail {
             height: 200px;
         }
     </style>
@@ -31,6 +31,9 @@
                         <li class="list-group-item">Cras justo odio</li>
                         <li class="list-group-item">Dapibus ac facilisis in</li>
                         <li class="list-group-item">Vestibulum at eros</li>
+
+                        <a href="{% url 'add' %}" class="btn btn-dark btn-block btn-sm m-1">Add Photo</a>
+
                     </ul>
                 </div>
 
@@ -46,7 +49,7 @@
                             <div class="card-body">
                                 <small class="card-text">Category: Pets</small>
                             </div>
-                            <a class="btn btn-outline-dark btn-sm m-1" href="">View</a>
+                            <a class="btn btn-outline-dark btn-sm m-1" href="{% url 'photo' 5 %}">View</a>
                         </div>
                     </div>
 
@@ -58,7 +61,7 @@
                             <div class="card-body">
                                 <small class="card-text">Category: Pets</small>
                             </div>
-                            <a class="btn btn-outline-dark btn-sm m-1" href="">View</a>
+                            <a class="btn btn-outline-dark btn-sm m-1" href="{% url 'photo' 5 %}">View</a>
                         </div>
                     </div>
 
@@ -70,7 +73,7 @@
                             <div class="card-body">
                                 <small class="card-text">Category: Pets</small>
                             </div>
-                            <a class="btn btn-outline-dark btn-sm m-1" href="">View</a>
+                            <a class="btn btn-outline-dark btn-sm m-1" href="{% url 'photo' 5 %}">View</a>
                         </div>
                     </div>
 
@@ -82,7 +85,7 @@
                             <div class="card-body">
                                 <small class="card-text">Category: Pets</small>
                             </div>
-                            <a class="btn btn-outline-dark btn-sm m-1" href="">View</a>
+                            <a class="btn btn-outline-dark btn-sm m-1" href="{% url 'photo' 5 %}">View</a>
                         </div>
                     </div>
 
