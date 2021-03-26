@@ -28,16 +28,20 @@
                         Categories
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">All</li>
+                        <li class="list-group-item">
+                            <a href="{% url 'gallery' %}">All</a>
+                        </li>
                         {% for category in categories %}
-                        <li class="list-group-item">{{ category.name }}</li>
+                        <li class="list-group-item">
+                            <a href="{% url 'gallery' %}?category={{category.name}}">{{ category.name }}</a>
+                        </li>
                         {% endfor %}
 
                         <a href="{% url 'add' %}" class="btn btn-dark btn-block btn-sm m-1">Add Photo</a>
 
                     </ul>
                 </div>
-
+                
             </div>
             <div class="col-md-9">
                 <div class="row">
@@ -46,7 +50,7 @@
                     <div class="col-md-4">
                         <div class="card my-2">
                             <img src="{{photo.image.url}}"
-                                class="image-thumbail" alt="...">
+                                class="image-thumbail" alt="Card image cap">
 
                             <div class="card-body">
                                 <small class="card-text">Category: {{photo.category.name}}</small>
